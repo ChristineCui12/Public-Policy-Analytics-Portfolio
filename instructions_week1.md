@@ -18,40 +18,66 @@ By the end of this setup, you'll have:
 
 Before starting, make sure you have:
 - [ ] A GitHub account ([create one here](https://github.com/join) if needed)
+- [ ] GitHub desktop installed on your computer
 - [ ] Quarto installed on your computer ([download here](https://quarto.org/docs/get-started/))
 - [ ] R and RStudio installed
 
 ## Step-by-Step Setup
 
-### Step 1: Customize Your Repository
+### Step 1: Using GitHub desktop to clone your repository to your local computer
 
-You should already be in your personal repository (created when you accepted the GitHub Classroom assignment). Now let's personalize it!
+You should already be in your personal repository (created when you accepted the GitHub Classroom assignment)
+
+1. login your GitHub account at Github Desktop
+2. click the repo you just created
+3. Click clone button at the bottom
+4. select a prefer location you want to put the repo 
+ <img width="728" height="497" alt="Screenshot 2026-01-21 133117" src="https://github.com/user-attachments/assets/d27574ac-1b49-400b-acb4-360569cea4d1" />
+5. click the blue clone button
+
+Now, the repo should be successfully cloned and you can find it on your local computer
+
+### Step 2: Customize Your Repository on your local computer
+
+. Now let's personalize it!
+
+<img width="728" height="504" alt="Screenshot 2026-01-21 133425" src="https://github.com/user-attachments/assets/0b244e46-1cd6-41ab-b96a-7e7912691385" />
+
+Click the show in explorer button to open the repo in Explorer
 
 #### 1.1 Edit Your Site Title
-1. Click on the `_quarto.yml` file
-2. Click the pencil icon (✏️) to edit
+1. Open the `_quarto.yml` file
 3. Change `"Your Name - MUSA 5080 Portfolio"` to include your actual name
 4. Example: `"Jane Smith - MUSA 5080 Portfolio"`
-5. Click **"Commit changes"** at the bottom
 
 #### 1.2 Update Your Homepage
-1. Click on the `index.qmd` file
+1. Open the `index.qmd` file
 2. Click the pencil icon (✏️) to edit
 3. Update the **"About Me"** section with your information:
    - Your name and background
    - Your email address
    - Your GitHub username
    - Why you're taking this course
-4. Click **"Commit changes"**
+
 
 #### 1.3 Complete Your First Weekly Notes
 1. Navigate to the `weekly-notes` folder
 2. Click on `week-01-notes.qmd`
-3. Click the pencil icon (✏️) to edit
-4. Fill in your notes from the first class
-5. Click **"Commit changes"**
+3. Fill in your notes from the first class
+   
+### Step 3: Quarto build website
+1. In the github command console, run following command
+```bash
+quarto render
+```
+2. **Check locally:** Make sure everything looks good
 
-### Step 2: Enable GitHub Pages
+### Step 4: commit your change and push everything to github
+1. enter a commit message
+2. click the commit to main button
+3. click push origin button on the right side of the panel
+   
+### Step 5: Enable GitHub Pages
 
 This step makes your portfolio visible as a live website!
 
@@ -64,14 +90,14 @@ This step makes your portfolio visible as a live website!
 4. **Save**: Click "Save"
 5. **Wait**: GitHub will show a message that your site is being built (this takes 1-5 minutes)
 
-### Step 3: Test Your Website
+### Step 6: Test Your Website
 
 1. **Find Your URL**: After a few minutes, GitHub will show your website URL at the top of the Pages settings
    - It will look like: `https://yourusername.github.io/repository-name`
 2. **Visit Your Site**: Click the link to see your live portfolio!
 3. **Bookmark It**: Save this URL - you'll submit it to Canvas
 
-### Step 4: Submit to Canvas
+### Step 7: Submit to Canvas
 
 1. Copy your live website URL
 2. Go to the Canvas assignment
